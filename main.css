@@ -1,0 +1,16 @@
+h1{
+	align-content:center;
+	color: #0ABCDF;
+	font-weight: bolder;
+
+}
+.txt{
+font-family: "times new roman"
+color:#ffffff;
+font-style: italic;
+}
+
+table,th,td{
+ border:solid;
+ border-collapse:collapse;
+}
