@@ -1,16 +1,25 @@
+
 h1{
-	align-content:center;
+	text-align:center;
 	color: #0ABCDF;
 	font-weight: bolder;
 
 }
+body{
+	background:linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+	background-size: cover;
+}
 .txt{
-font-family: "times new roman"
-color:#ffffff;
+font-family: "times new roman";
+color:#000000;
 font-style: italic;
 }
 
 table,th,td{
  border:solid;
  border-collapse:collapse;
+}
+{
+	bottom: 0;
+	position: fixed;
 }
