@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student-details>
+        <student>
+                <USN>MCA050</USN>
+                <name>nirmal</name>
+                <class>MCA</class>
+                <phone>98545612789</phone>
+                <college>RVCE</college>
+        </student>
+        <student>
+                <USN>MCA049</USN>
+                <name>Nirmal</name>
+                <class>MCA</class>
+                <phone>9545612789</phone>
+                <college>RVCE</college>
+        </student>
+        <student>
+                <USN>MCA054</USN>
+                <name>Vishwa</name>
+                <class>MCA</class>
+                <phone>9545612789</phone>
+                <college>RVCE</college>
+        </student>
+
+</student-details>
+
+

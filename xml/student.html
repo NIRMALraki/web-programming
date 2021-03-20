@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <style>
+                table,th,td{
+                border:10px solid black;
+                border-collapse:collapse;
+                }
+                </style>
+        </head>
+        <body>
+                <button type="button" onclick="studentdata()"> STUDENT DETAILS </button>
+                <br><br>
+                <table id="demo"></table>
+
+                <script>
+                        function studentdata() {
+                                var bro = new XMLHttpRequest();
+                                bro.onreadystatechange = function () {
+                                        if(this.readyState == 4 && this.status == 200) {
+                                                myfunction(this);
+                                        }
+
+                        };
+
+                bro.open("GET","student.xml",true);
+                bro.send();
+
+                }
+
+                function myfunction(xml) {
+                        var i;
+                        var xmldoc = xml.responseXML;
+                        var table ="<tr><th>USN</th><th>NAME</th></tr>";
+ var x = xmldoc.getElementsByTagName("student");
+                        for(i=0;i<x.length;i++)
+                                {
+ table +="<tr><td>" + x[i].getElementsByTagName("USN")[0]
+                                                        .childNodes[0].nodeValuewq
+ +
+                                                        "</td><td>" + x[i].getElementsByTagName("name")[0]
+                                                        .childNodes[0].nodeValue + "</td></tr>"
+                                }
+                        document.getElementById("demo").innerHTML = table;
+                                }
+                </script>
+        </body>
+</html>
+
