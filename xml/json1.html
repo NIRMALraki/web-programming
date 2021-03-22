@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+           function getelementsbyjson(){
+
+                               var student=[
+                                    {
+                                        id:080,
+                                        name:"nirmal",
+                                        major:"cn",
+                                        mobile:8110206999,
+                                    },
+                                    {
+                                        id:050,
+                                        name:"rakesh",
+                                        major:"wap",
+                                        mobile:6110206099,
+
+                                    },
+                                    {
+                                        id:950,
+                                        name:"bharath",
+                                        major:"nasm",
+                                        mobile:5110206099,
+                                    }]
+                                   var table_body='<table border="1"><tr><td>id</td><td>name</td><td>major</td><td>mobile</td></tr>'
+                                        student.forEach(function(d)
+                                        {
+                                            table_body+='<tr><td>'+d.id+'</td><td>'+d.name+'</td><td>'+d.major+'</td><td>'+d.mobile+'</td></tr>';
+
+                                        });
+                                        table_body+='<table>';
+                                            var divContainer=document.getElementById("demo");
+                                            divContainer.innerHTML=table_body;
+                                        }
+                                          
+        </script>
+
+    </head>
+    <body>
+        <input type="button" onclick="getelementsbyjson()" value="get value from json">
+        <p id="demo"></p>
+    </body>
+</html>
