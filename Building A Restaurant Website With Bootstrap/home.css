@@ -1,0 +1,63 @@
+
+
+div.jumbotron{
+   background-color:transparent;
+   padding-bottom: 6px;
+}
+
+body{
+  
+    background-image: linear-gradient(270deg, #ddc7dd 0%, #c6ecef 100%);
+    height:auto;
+    width:auto;
+    
+}
+.item {
+    transition:all 400ms ease-out;
+    box-shadow:0 0 8px 3px #ede1fb;
+    border:2px solid #ddc7f7;
+    background-color:transparent;
+ }
+ 
+ .item:hover {
+    transition:all 200ms ease-in;
+    box-shadow:0 0 8px 3px rgb(255, 217, 217);
+    border:2px solid rgb(255, 205, 205);
+    
+ }
+
+
+ .navbar-brand{
+    letter-spacing: 2px;
+    padding: 1px;
+ }
+
+ div.card{
+   background-color:transparent;
+   
+ }
+
+.container-content{
+
+   padding: 10px;
+
+}
+
+div.row{
+   padding: 5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap');
+
+h1.menu
+{
+   text-align: center;
+   font-family: 'Dancing Script', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+div.footer{
+   padding: 10px;
+   background-color:black;
+   color: white;
+   text-align: center;
+   font-family: 'Combo', cursive;
+}
