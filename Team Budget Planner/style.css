@@ -1,0 +1,28 @@
+div.form-input{
+   
+    position: absolute;
+
+    top: 440px;
+    bottom: 0;
+    left: 100px;
+    right: 100px;
+    margin: auto;
+ 
+    
+}
+input.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+body{
+    height: 1000px;
+   
+}
+
+table{
+    position: relative;
+    top: 20px;
+}

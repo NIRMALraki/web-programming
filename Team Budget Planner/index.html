@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+<link rel="stylesheet" href="style.css">
+<script src="budgetplanner.js"></script>
+
+
+<title>Home</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="header">
+        <div class="jumbotron">
+            <h1 class="display-3">Budget Planner</h1>
+            <hr class="my-3">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">BP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">Program Managers</a>
+                  <a class="nav-link" href="finance.html">Finance Teams</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="content">
+        <div class="form-input">
+            <div class="card border-secondary">
+              <div class="card-body">
+                <h4 class="card-title">Add New Budget</h4>
+                <form>
+                <div class="form-floating mb-3">
+                    <label for="floatingInput">Client Name</label>
+                    <input type="text" class="form-control" id="client-name" placeholder="Google, HDFC, etc">
+                    
+                  </div>
+                  <div class="form-floating">
+                    <label for="floatinginput">Project Name</label>
+                    <input type="text" class="form-control" id="project-name" placeholder="Ticket Booking, Payment, etc">
+                    
+                  </div>
+                  <div class="form-floating ">
+                    <label for="floatingInput">Budget</label>
+                    <input type="number" class="form-control" id="budget" placeholder="₹00.0">
+
+                  </div >
+                  <input type="submit" class="btn btn-primary" onclick="addBudget()">
+                  <input type="reset" class="btn btn-danger ">
+              </div>
+              <h6 id="out"></h6>
+            </form>
+
+            </div>
+           
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
